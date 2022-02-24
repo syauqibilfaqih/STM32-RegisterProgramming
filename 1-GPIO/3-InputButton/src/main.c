@@ -1,8 +1,5 @@
 #include "stm32f103x6.h"
 
-// inacurate delay function
-#define delay_ms(x) for (volatile int i = 0; i < x*1000; i++);
-
 int main()
 {
     RCC->APB2ENR = RCC_BASE+0x18; 
